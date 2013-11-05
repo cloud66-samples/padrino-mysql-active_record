@@ -19,8 +19,6 @@ ActiveRecord::Base.configurations[:development] = {
   :reconnect => true,
   :database  => 'padrino_with_mysql_development',
   :pool      => 5,
-  :username  => 'root',
-  :password  => '',
   :host      => 'localhost'
 }
 
@@ -30,8 +28,6 @@ ActiveRecord::Base.configurations[:production] = {
   :reconnect => true,
   :database  => 'padrino_with_mysql_production',
   :pool      => 5,
-  :username  => 'root',
-  :password  => '',
   :host      => 'localhost'
 }
 
@@ -41,8 +37,6 @@ ActiveRecord::Base.configurations[:test] = {
   :reconnect => true,
   :database  => 'padrino_with_mysql_test',
   :pool      => 5,
-  :username  => 'root',
-  :password  => '',
   :host      => 'localhost'
 }
 
