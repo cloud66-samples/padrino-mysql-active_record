@@ -1,5 +1,5 @@
 production:
-    after_rails:
+    after_padrino:
       - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: rails
@@ -7,7 +7,7 @@ production:
         execute: true
         sudo: true
 staging:
-    after_rails:
+    after_padrino:
       - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: rails
@@ -15,7 +15,7 @@ staging:
         execute: true
         sudo: true
 development:
-    after_rails:
+    after_padrino:
       - source: /.cloud66/rake_task.sh
         destination: /tmp/rake_task.sh
         target: rails
