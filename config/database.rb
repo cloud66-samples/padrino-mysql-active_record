@@ -1,25 +1,34 @@
 ActiveRecord::Base.configurations[:development] = {
-  :adapter   => 'mysql2'
-  :username => ENV['MYSQL_USERNAME']
-  :password => ENV['MYSQL_PASSWORD']
-  :host => ENV['MYSQL_ADDRESS']
-  :database => :host => ENV['MYSQL_DATABASE']
+  :adapter   => 'mysql2',
+  :encoding  => 'utf8',
+  :reconnect => true,
+  :database  => ENV['MYSQL_DATABASE'],
+  :pool      => 5,
+  :username  => ENV['MYSQL_USERNAME'],
+  :password  => ENV['MYSQL_PASSWORD'],
+  :host      => ENV['MYSQL_ADDRESS'],
 }
 
 ActiveRecord::Base.configurations[:production] = {
-  :adapter   => 'mysql2'
-  :username => ENV['MYSQL_USERNAME']
-  :password => ENV['MYSQL_PASSWORD']
-  :host => ENV['MYSQL_ADDRESS']
-  :database => :host => ENV['MYSQL_DATABASE']
+  :adapter   => 'mysql2',
+  :encoding  => 'utf8',
+  :reconnect => true,
+  :database  => ENV['MYSQL_DATABASE'],
+  :pool      => 5,
+  :username  => ENV['MYSQL_USERNAME'],
+  :password  => ENV['MYSQL_PASSWORD'],
+  :host      => ENV['MYSQL_ADDRESS'],
 }
 
 ActiveRecord::Base.configurations[:test] = {
-  :adapter   => 'mysql2'
-  :username => ENV['MYSQL_USERNAME']
-  :password => ENV['MYSQL_PASSWORD']
-  :host => ENV['MYSQL_ADDRESS']
-  :database => :host => ENV['MYSQL_DATABASE']
+  :adapter   => 'mysql2',
+  :encoding  => 'utf8',
+  :reconnect => true,
+  :database  => ENV['MYSQL_DATABASE'],
+  :pool      => 5,
+  :username  => ENV['MYSQL_USERNAME'],
+  :password  => ENV['MYSQL_PASSWORD'],
+  :host      => ENV['MYSQL_ADDRESS'],
 }
 
 # Setup our logger
