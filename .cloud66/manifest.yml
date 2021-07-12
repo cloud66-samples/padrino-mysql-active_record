@@ -1,0 +1,3 @@
+rack:
+  configuration:
+    ruby_version: 2.5.3
